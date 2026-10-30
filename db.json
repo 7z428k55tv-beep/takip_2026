@@ -1,0 +1,75 @@
+{
+  "takipler": [
+    {
+      "id": "tmvqhm7n7778wqe",
+      "baslik": "Desfree BAKIR BANT 10 MM 20",
+      "referansFiyat": 357.71,
+      "sonFiyat": 358.43,
+      "link": "https://www.hepsiburada.com/desfree-bakir-bant-10-mm-20-metre-p-HBCV00000TW9DP?magaza=efiksbilisim",
+      "resim": "https://productimages.hepsiburada.net/s/777/375/110001975077791.jpg/format:webp",
+      "magaza": "hepsiburada.com",
+      "arama": "",
+      "aktif": true,
+      "indirimBildirdi": false,
+      "olusturma": "2026-10-27T09:32:52.915Z",
+      "sonKontrol": "2026-10-30T08:57:12.446Z",
+      "sonDurum": "ok",
+      "gecmis": [
+        {
+          "tarih": "2026-10-27T09:32:52.915Z",
+          "fiyat": 357.71
+        },
+        {
+          "tarih": "2026-10-28T07:37:08.999Z",
+          "fiyat": 358.43
+        }
+      ]
+    },
+    {
+      "id": "tmvqfnvm1s7cwbf",
+      "baslik": "Anycubic Kobra x 3D Yazıcı Modern FDM Teknolojisi ile 260 mm Baskı Hacmi ve Çok Renkli Filament",
+      "referansFiyat": 18500,
+      "sonFiyat": 18500,
+      "link": "https://www.hepsiburada.com/anycubic-kobra-x-3d-yazici-modern-fdm-teknolojisi-ile-260-mm-baski-hacmi-ve-cok-renkli-filament-destegi-p-HBCV0000DF23CG?magaza=DomiRobot",
+      "resim": "https://productimages.hepsiburada.net/s/777/375/110001584399486.jpg/format:webp",
+      "magaza": "hepsiburada.com",
+      "arama": "",
+      "aktif": true,
+      "indirimBildirdi": false,
+      "olusturma": "2026-10-27T08:38:11.401Z",
+      "sonKontrol": "2026-10-30T08:57:14.728Z",
+      "sonDurum": "ok",
+      "gecmis": [
+        {
+          "tarih": "2026-10-27T08:38:11.401Z",
+          "fiyat": 18500
+        }
+      ]
+    },
+    {
+      "id": "tmvpbw720xzcttm",
+      "baslik": "Xiaomi Tag Akıllı Takip Cihazı",
+      "referansFiyat": 709,
+      "sonFiyat": 709,
+      "link": "https://www.trendyol.com/xiaomi/tag-akilli-takip-cihazi-p-1103359917",
+      "resim": "https://cdn.dsmcdn.com/mnresize/400/-/ty1826/prod/QC_PREP/20260212/13/8485fb2b-a52c-389f-bd50-cc76d464ba2f/1_org_zoom.jpg",
+      "magaza": "Trendyol",
+      "arama": "xiaomi tag",
+      "aktif": true,
+      "indirimBildirdi": false,
+      "olusturma": "2026-10-26T14:04:54.840Z",
+      "sonKontrol": "2026-10-30T08:57:16.836Z",
+      "sonDurum": "ok",
+      "gecmis": [
+        {
+          "tarih": "2026-10-26T14:04:54.840Z",
+          "fiyat": 709
+        }
+      ]
+    }
+  ],
+  "telegram": {
+    "chatId": 6149753079,
+    "baglama": "2026-10-13T14:36:15.364Z"
+  }
+}

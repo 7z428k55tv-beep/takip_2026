@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>İndirim Takip</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="top">
+  <div class="brand">🔔 İndirim Takip</div>
+  <div class="stats">
+    <div class="stat"><span id="stToplam">0</span><label>takip</label></div>
+    <div class="stat ok"><span id="stIndirim">0</span><label>indirimde</label></div>
+    <div class="stat save"><span id="stKazanc">0 ₺</span><label>kazanç</label></div>
+  </div>
+</header>
+
+<main>
+  <section class="card search-live">
+    <h2>🔍 Ürün Ara <small>(Trendyol + Hepsiburada + MediaMarkt + Amazon + Pazarama + Vatan + N11 + PTTAVM + resmi siteler)</small></h2>
+    <div class="row">
+      <input id="inCanli" placeholder="örn: iPhone 15 128GB" autocomplete="off">
+      <button id="btnCanli" class="primary">Ara ve Getir</button>
+      <button id="btnTemizle" class="ghost">Temizle</button>
+    </div>
+    <div id="canliDurum" class="live-status"></div>
+    <div id="canliListe" class="live-grid"></div>
+  </section>
+
+  <section class="card add">
+    <h2>Manuel Ekle <small>(ürün linki yapıştır, adı + fiyatı otomatik çözülür)</small></h2>
+    <div class="row">
+      <input id="inLink" placeholder="Ürün linki — Trendyol / Amazon / MediaMarkt / Pazarama / Vatan..." autocomplete="off">
+      <button id="btnEkle" class="primary">Takibe Al</button>
+    </div>
+  </section>
+
+  <section class="toolbar">
+    <input id="inAra" placeholder="🔍 ürün ara..." autocomplete="off">
+    <select id="selSira">
+      <option value="yeni">En yeni</option>
+      <option value="indirim">En çok indirim</option>
+      <option value="fiyatArtan">Fiyat ↑</option>
+      <option value="fiyatAzalan">Fiyat ↓</option>
+    </select>
+    <select id="selFiltre">
+      <option value="tumu">Tümü</option>
+      <option value="indirimde">İndirimdekiler</option>
+      <option value="alarm">Alarm verenler</option>
+    </select>
+    <button id="btnBildirim" title="Masaüstü bildirim izni">🔔</button>
+    <button id="btnTumunuTemizle" class="ghost" title="Tüm takipleri temizle">🗑️ Hepsini Temizle</button>
+  </section>
+
+  <section class="card indirim-gunleri">
+    <h2>📅 İndirim Günleri <small>(11.11, Muhteşem Cuma, Efsane Cuma ve tüm kampanya günleri)</small></h2>
+    <div class="row" style="margin-bottom:8px">
+      <button id="btnIndirimTest" class="small">🔔 Bildirim Test Et (Telegram)</button>
+      <span id="igTestDurum" class="live-status"></span>
+    </div>
+    <div id="igListe" class="ig-grid"></div>
+  </section>
+
+  <section id="liste" class="grid"></section>
+  <p id="bos" class="empty">Henüz ürün yok. Yukarıdan ilk ürünü ekle 👆</p>
+</main>
+
+<div id="toast"></div>
+
+<dialog id="dlgFiyat">
+  <form method="dialog">
+    <h3 id="dlgBaslik">Fiyat güncelle</h3>
+    <input id="dlgFiyatIn" type="number" min="1" step="0.01" placeholder="Yeni fiyat (₺)" required>
+    <div class="dlg-btns">
+      <button value="cancel" class="ghost">Vazgeç</button>
+      <button id="dlgKaydet" value="ok" class="primary">Kaydet</button>
+    </div>
+  </form>
+</dialog>
+
+<dialog id="dlgAlternatif">
+  <form method="dialog">
+    <h3 id="dlgAltBaslik">🔍 Daha Uygun Ürün Bulundu</h3>
+    <p id="dlgAltMesaj" style="font-size:13px;color:#6b7686;margin-bottom:12px"></p>
+    <div id="dlgAltListe" style="max-height:200px;overflow-y:auto;margin-bottom:12px"></div>
+    <div class="dlg-btns">
+      <button id="dlgAltSec" value="ok" class="primary">Bunu Seç (daha uygun)</button>
+      <button value="cancel" class="ghost">Orijinali Kullan</button>
+    </div>
+  </form>
+</dialog>
+
+<script src="app.js"></script>
+<script src="canli.js"></script>
+<script src="indirim-gunleri.js"></script>
+</body>
+</html>
