@@ -1128,7 +1128,7 @@ const server = http.createServer(async (req, res) => {
       takipSil(mDel[1]);
       return json(res, 200, { ok: true });
     }
-    const ARAYUZ = path.join(__dirname, "..");
+    const ARAYUZ = __dirname;
     let dosya = yol === "/" ? "index.html" : yol.replace(/^\//, "");
     dosya = path.normalize(path.join(ARAYUZ, dosya));
     if (!dosya.startsWith(ARAYUZ)) return json(res, 403, { hata: "yasak" });
